@@ -75,6 +75,7 @@ const AdminDashboard = () => {
         getTokenData();
         setLoader(false);
         toast.success('Weather api token updated successfully.');
+        getUserData();
       })
       .catch((error) => {
         console.log('token update error is here',error)
